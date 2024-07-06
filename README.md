@@ -19,3 +19,35 @@ This Shiny application predicts the total number of wins for an MLB team based o
    ```r
    install.packages("shiny")
    install.packages("randomForest")
+2. Clone the Repository:
+
+Clone this repository to your local machine using the following command:
+git clone https://github.com/your_username/MLB_Season_Win_Total_Predictor.git
+
+3. Set Working Directory:
+
+Open RStudio and set your working directory to the cloned repository folder.
+
+4. Load the Data and Model:
+
+Load the baseball.csv data and the random_forest_model.RData in R:
+
+baseball <- read.csv("baseball.csv")
+load("random_forest_model.RData")
+
+5. Run the Shiny App:
+
+Open Win Predictor App.r in RStudio and run it.
+Alternatively, run the following command in RStudio:
+
+library(shiny)
+runApp()
+
+Usage
+Enter the team statistics in the input fields.
+Click on "Predict Wins" to get the predicted total wins and the range with the margin of error.
+Contributing
+Feel free to submit issues or pull requests if you have suggestions for improving the app.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
